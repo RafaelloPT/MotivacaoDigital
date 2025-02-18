@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivação Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="menu" id="menu">
+          <ul>
+              <li><a href="#">Motivação Pessoal</a></li>
+              <li><a href="#">Sucesso Profissional</a></li>
+              <li><a href="#">Superação</a></li>
+              <li><a href="#">Autoestima</a></li>
+              <li><a href="#">Determinação</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="transparent-box" id="main-box">
+      <div id="intro-content">
+        <span id="typing-text"></span><span class="cursor">|</span>
+        <div id="enter-message" style="display: none;">
+          <br>Press Enter para continuar
+        </div>
+      </div>
+      
+      <div id="category-menu" style="display: none;">
+        <h3>Escolha as categorias</h3>
+        <div class="menu-items">
+          <button class="category-btn">Motivação Pessoal</button>
+          <button class="category-btn">Sucesso Profissional</button>
+          <button class="category-btn">Superação</button>
+          <button class="category-btn">Autoestima</button>
+          <button class="category-btn">Determinação</button>
+        </div>
+        <button id="confirm-btn" style="display: none;">Confirmar Seleção</button>
+      </div>
+    </div>
+  
+    <!-- Novo container para as frases -->
+    <div class="transparent-box" id="quotes-box" style="display: none;">
+      <div class="quote-container">
+        <button class="nav-btn left-btn">←</button>
+        <div class="quote-text"></div>
+        <button class="nav-btn right-btn">→</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+  

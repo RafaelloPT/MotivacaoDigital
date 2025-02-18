@@ -1,0 +1,232 @@
+body{
+    background-image: url(_A\ Serenidade\ da\ Solidão_.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 1400px 1100px; /* dimensiona a imagem image 20px na horizontal e 40px na vertical */
+}
+.container {
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    top:580px;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border:1px solid #333;
+    border-radius: 30%;
+    transition: color 0.3s ease;
+    background-color: #333;
+}
+.menu {
+    display: none;
+    background-color:#333;
+    border:1px solid #444;
+    padding: 10px;
+    position: absolute;
+    top: -170px;
+    left: 10px;
+    z-index: -1;
+    border-radius: 10px;
+    height: 200px;
+    width: 150px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.content {
+    
+  /* Para centralizar a div na página */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  gap: 20px;
+}
+
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 400px;
+    word-wrap: break-word;
+    text-align: center;
+    transition: all 0.5s ease;
+    /* A largura se ajustará automaticamente ao conteúdo */
+    width: fit-content;
+    
+    /* Estilo do texto */
+    color: #000000;
+    font-size: 24px;
+    position: relative;
+    top:50px;
+  }
+  #quotes-box {
+    animation: slideUp 0.5s ease-out;
+  }
+  .cursor {
+    font-weight: bold;
+    animation: blink 1s infinite;
+    display: inline-block;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .category-btn {
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .category-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-btn.selected {
+    background-color: rgba(0, 120, 255, 0.2);
+    border-color: rgba(0, 120, 255, 0.5);
+  }
+  
+  #confirm-btn {
+    padding: 12px 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #585858;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #confirm-btn:hover {
+    background-color: #282e29;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #category-menu {
+    animation: fadeIn 0.5s ease-out;
+  }
+  #typing-text {
+    display: inline-block; /* Mantém o texto e o cursor na mesma linha */
+  }
+  #enter-message {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    animation: fadeIn 1s;
+  }
+  #confirm-btn.active {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #232323;
+  }
+  
+  #confirm-btn.active:hover {
+    background-color: #393a39;
+  }
+
+  #quote-screen {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+    min-width: 300px; /* Aumentei a largura mínima */
+    max-width: 500px; /* Definindo uma largura máxima */
+  }
+  
+  .quote-text {
+    flex: 1;
+    font-size: 19px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10 20px;
+  }
+  @media (max-width: 700px) {
+    .quote-text {
+      white-space: normal;
+    }
+  }
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    transform: scale(1.2);
+    color: #000;
+  }
+  
+  .nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
