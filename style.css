@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
-    object-fit: cover
+    object-fit: cover;
 }
 .container {
     width: 100%;
