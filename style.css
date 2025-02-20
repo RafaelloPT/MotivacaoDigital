@@ -1,8 +1,11 @@
 body{
     background-image: url('background.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 1400px 1100px; /* dimensiona a imagem image 20px na horizontal e 40px na vertical */
+    margin: 0;
+    height: 100vh;
+    object-fit: cover
 }
 .container {
     width: 100%;
